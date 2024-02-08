@@ -1,0 +1,16 @@
+Jupyter notebook is open-source web application for interactive coding documention.
+
+with Jupyter, you can execute code in real time and see results immediatly. 
+in the document, you can include text, various forms of images and other media and ofc the executable code, 
+which output is shown in the same document. 
+
+Jupyter isn't only for python, but supports multiple different coding languages.
+
+Jupyter is good for showing: how code works in steps, how sertain data is represented and how changing code affects outcomes.
+This is useful as/for prototyping, figuring out how new code works, debugging, teaching material, collabration documentation
+and analysis/experiment reproducibility
+
+benifits over traditional coding environment are clearer connection between code and outcomes, better readability
+and it is easy specially for beginners to understand the code. 
+
+Downside of Jupyter is that the document is hard to change in to an executable product.

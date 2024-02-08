@@ -1,0 +1,8 @@
+Ai_python/assignments/20_cnn/src/trainx.npy filter=lfs diff=lfs merge=lfs -text
+Ai_python/assignments/10_esikasittely/src/time_series.csv filter=lfs diff=lfs merge=lfs -text
+/AI_python/assignments/10_esikasittely/src/time_series.csv filter=lfs diff=lfs merge=lfs -text
+/AI_python/assignments/20_cnn/src/trainx.npy filter=lfs diff=lfs merge=lfs -text
+/AI_python/harjoitukset/14_Neuroverkot.mp4 filter=lfs diff=lfs merge=lfs -text
+/AI_python/harjoitukset/assignments.zip filter=lfs diff=lfs merge=lfs -text
+/AI_python/harjoitukset/assignments/10_esikasittely/src/time_series.csv filter=lfs diff=lfs merge=lfs -text
+/AI_python/harjoitukset/assignments/20_cnn/src/trainx.npy filter=lfs diff=lfs merge=lfs -text
