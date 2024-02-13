@@ -10,7 +10,31 @@ buffSize=1024
 
 
 #Write your code here!
+def client_handler(connection):
+    client_connected = True
+    while client_connected:
+        data = connection.recv(buffSize)
+        if not data:
+            client_connected = False
+            break
+        msg = data.decode()
+        client_number = int(msg)
+        reply = random.randint(0, client_numbe - 1)
+        #print("server: " + str(reply))
+        connection.sendall(str.encode(str(reply)))
+
+    connection.close()   
+
+def server_main():
+    UDPSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
+    UDPSocket.bind((localIP, buffSize))
     
+    while True:
+        #conn, addr = UDPSocket.accept()
+        th = threading.Thread(target=client_handler, args=(UDPSocket,))
+        if not th.is_alive():
+            th.start() 
+
 
 #You can utilize following client for test purposes
 def client_main():
@@ -30,6 +54,8 @@ def client_main():
 
     UDPSocket.close()
 
+
+server_th = threading.Thread(target=server_main).start()
 #Set True to run the clients
 run_client=False
 
